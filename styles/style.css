@@ -1,0 +1,219 @@
+/*
+filename:style.css
+author:Rakesh Raj
+created:29/08/2020
+last modified:01/09/2020
+description:index.html,quiz.html,topic.html,enhancements.html
+*/
+
+/*---------------------------------------
+/*universal styles common to index.html, quiz.html, topic.html, enhancements.html */
+
+*{font-family: calibri, sans-serif;}
+html,body{height:100%;padding:0;}
+html,body{height:100%;padding:0;}
+body{background-image:url("images/Master.jpg");
+	 overflow-y: scroll; 
+	 overflow-x:hidden;
+	 margin:0;
+	 padding:0;
+}
+	 
+a,h1,h2,h3{font-family:"Arial Black", Gadget, sans-serif;}
+
+/*menu style*/ 
+
+nav, header {display:block;width:100%;clear:both;text-align:center;}
+nav a{text-decoration: none; padding: 0.2em 0.6em; border:4px solid #ccc;}
+nav a:hover {background-color: #FFFFFF ; border-color: #0000A0; }
+nav p{display:inline-block;}
+
+/*header style*/
+
+header h1{
+	color:#000000;
+	border-style: solid;
+	border-width: 5px;
+	border-color: darkgray;
+	margin: 0.5em;
+	padding: 0.5em;
+	background-color:lightgray;
+	text-align: center;	
+	font-size:2.5em;
+	font-style:italic;
+	letter-spacing:0.75px;
+	font-family:impact,sans-serif;	
+}
+
+/*main styles*/
+
+main{box-sizing:border-box;
+	width:100%; 	
+	display:block;
+	color:#000000;
+	width:100%;
+}
+
+/*footer styles*/
+
+footer {
+	color:#000000;
+	box-sizing:border-box;
+	width:100%;
+	height:auto;
+	text-align:center;
+	font-style:italic;
+	padding:10px 0;
+	padding-bottom:50px;
+	border-top:solid thin lightblue;
+	font-size:smaller;
+}
+
+footer a{text-decoration:underline; font-size:smaller;}
+
+.references {font-size:smaller;}
+
+/*---------------------------------------
+/* styling for page index.html */
+/* image styles for index_main class */
+
+
+.index_main a img{ 
+	position:relative;
+	display: block;
+	max-width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	 
+}
+
+/* header styles for index_main class */
+ 
+.index_main .about h2{
+	text-align: center;
+	font-size:2.5em;
+}
+
+/* paragraph styles for index_main class */
+
+.index_main .about p{
+	text-align: center; 
+	font-size:1.5em;
+	display: block;
+}
+
+/*---------------------------------------
+/*styling for page topic.html */
+
+/* Enhancement 1 */
+/* aside styles for image transition */
+.topic_main aside.index_aside1 {float:right;clear:right;display:block;width:10%;margin-top:100px;padding:1px;}
+.topic_main aside.index_aside1 p{clear:right;display:block;visibility:hidden;opacity:0;transition: opacity 1s, visibility 1s;}
+.topic_main aside.index_aside1 img{float:right;width:45%;clear:both;transition:all 0.2s ease;}
+.topic_main aside.index_aside1:hover p{visibility:visible;opacity:1;}
+.topic_main aside.index_aside1:hover img{width:65%; }
+
+/* figure styles for topic_main class */
+/* Enhancement 2*/
+figure img {width: 25%; float: left;height:450px;transition: all 0.3s ease-in;}
+figure { 
+  position: relative;
+  display:block;
+  width: 400%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 15s slide infinite; 
+  animation-timing-function:linear;
+  animation-play-state:running;
+}
+
+@keyframes slide {
+0%  { left: 0%; }
+20% { left: 0%;opacity:1;}
+21% {opacity:0.9;}
+22% {opacity:0.8;}
+24% {opacity:0.9;} 
+25% { left: -100%;opacity:1; }
+45% { left: -100%; opacity:1;}
+46% {opacity:0.9;}
+47% {opacity:0.8;}
+49% {opacity:0.9;}
+50% { left: -200%; opacity:1; }
+70% { left: -200%; opacity:1; }
+71% {opacity:0.9;}
+72% {opacity:0.8;}
+74% {opacity:0.9;}
+75% { left: -300%; opacity:1;}
+95% { left: -300%; opacity:1;}
+96% {opacity:0.9;}
+97% {opacity:0.8;}
+99% {opacity:0.9;}
+100% { left: 0%; opacity:1;}
+}
+
+
+/* footer styles for topic.html */
+#footer_topic{width: 100%}
+
+/* aside styles for topic_main class and id aside2 */
+.topic_main aside.index_aside2 {
+	float:right; 
+	width: 25%; 
+	background-color:lightgray;
+	border-style: solid;
+	border-color: coral;
+	margin: 25px;
+	padding: 25px;
+}
+
+/* header styles for topic_main class */
+.topic_main h1{font: small-caps 50px Georgia, serif;
+}
+
+.topic_main h2{
+	text-align:left;
+	font-size:2.0em;
+}
+
+/* header styles for section content */
+.topic_main #contents h3{text-align:left; font-size:1.7em;  }
+
+/* list styles for section content */
+.topic_main #contents ol li{text-align:left; font-size:1.5em; }
+
+/* styles for section future  */
+#future a{font-family: calibri, sans-serif;}
+
+/*table styles for section comparision */
+#topic_table{border-color:#000000;margin:auto;border-collapse: collapse;width:100%;table-layout:fixed;}
+#topic_table td{text-align:center;word-wrap:break-word;border:2px ridge black;background-color:rgb(242, 242, 242);color:#000000;}
+#topic_table th{text-align:center;word-wrap:break-word;border:2px ridge rgb(242,242,242);background-color:#000000;color:rgb(255, 137, 0);padding:5px 0;}
+	
+/*styling for page quiz.html */
+/* form styles*/
+#quiz_main{box-sizing:border-box;margin:50px 15%;}
+form{width:100%;text-align:left;}
+form p{clear:left;}
+input{clear:right;}
+input[type=text]{width:50%;}
+.quiz{padding:25px;width:100%;table-layout:fixed;border-spacing:10px;}
+.quiz td{vertical-align: top;word-wrap: break-word}
+legend{color:#000000; font-size:1.5em;}
+label{color:#000000;}
+select{width:100%;}
+fieldset{background-color:lightgray;margin-top:10px;}
+textarea{resize:none;width:100%;overflow:auto;}
+.button{background-color:#3d87cf;opacity:0.85;border:0;width:10%;height:35px;color:white;}
+.button:hover{opacity:1}
+.button{background-color:#3d87cf;opacity:0.85;border:0;width:10%;height:35px;color:white;}
+.button:hover{opacity:1}
+#submit{text-align:center;}
+
+/*---------------------------------------
+/*styling for page enhancements.html */
+
+.enhancements{text-align:justify;}
+.enhancements a{text-decoration:none;color:#26619a;}

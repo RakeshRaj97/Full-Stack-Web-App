@@ -1,0 +1,78 @@
+<!--
+filename:enhancements2.html
+author:Rakesh Raj
+created:29/09/2020
+last modified:-25/10/2020
+description:Enhancements page for javascript
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+	    <meta name="description" content="Enhancements Page" />	
+	    <meta name="keywords" content="HTML5, Instant Messaging" />
+	    <meta name="author" content="Rakesh Raj Gopala Sai Krishnan"  />
+	    <link href="styles/style.css" rel="stylesheet"/>
+	    <title>Instant Messaging</title>
+	</head>
+<body>
+	<header>
+		<h1>INSTANT MESSAGING (IM) TECHNOLOGY</h1>
+	</header>
+	<nav>	
+	    <p><a class="nav" href="index.php">Home</a></p>
+		<p><a href="topic.php">Topic</a></p>
+		<p><a href="quiz.php">Quiz</a></p>
+		<p><a href="manage.php">Manage</a></p>
+		<p><a href="enhancements.html">Enhancements</a></p>
+		<p><a href="enhancements2.html">Javascript Enhancements</a></p>
+		<p><a href="phpenhancements.html">PHP Enhancements</a></p>
+	</nav>
+	<main>
+	<article class="enhancements_main">
+	<h2>Detailed description of enhancements used for Javascript</h2>
+	<section class="enhancements">
+		<h2>Enhancement 1: Implement a Timer</h2>
+		<p>The code required to implement this feature are,</p>
+		<ul>
+		<li>setTimeout</li>
+		<li>clearTimeout</li>
+		<li>alert</li>
+		<li>window.location.assign</li>
+		</ul>	
+		<p>This feature uses a timer so that the user has only a limited time to complete the quiz. The function "startTimer()" in "enhancements.js" is used to implement this feature.<br>
+			A timer of 60 seconds is set for quiz completion, failing which the form is redirected to "result.html" page and the attempt count is stored in localStorage. View the timer using this <a href="quiz.php#time">link.</a></p>
+	</section>
+	<section class="enhancements">
+		<h2>Enhancement 2: Confirmation box to display instructions before quiz start.</h2>
+		<p>The code required to implement this feature are,</p>
+		<ul>
+		<li>confirm</li>
+		<li>window.location.assign</li>
+		</ul>
+		<p>This feature introduces a confirmation box to the user before they begin the quiz. <br>
+			The confirmation box holds the instructions regarding to the time limit and the scoring criteria. If the user selects "OK" then a message "All the best" is displayed which can be viewed using this <a href="quiz.php#intro">link</a> and the user can start the quiz. If a user selects "Cancel", he is redirected to the "index.php" page.</p>
+	</section> 
+	<section class="references">
+		<h3>References</h3>
+		<ol>
+		<li><a href="https://www.w3schools.com/jsref/met_win_settimeout.asp" target="_blank">setTimeout</a></li>
+		<li><a href="https://www.geeksforgeeks.org/javascript-cleartimeout-clearinterval-method/" target="_blank">clearTimeout</a></li>
+		<li><a href="https://www.w3schools.com/jsref/met_win_alert.asp" target="_blank">alert</a></li>
+		<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Location/assign" target="_blank">window.location.assign</a></li>
+		<li><a href="https://www.w3schools.com/jsref/met_win_confirm.asp" target="_blank">confirm</a></li>
+		<li>Week 5, 6, 7 Lecture slides</li>
+		<li>Lab05, Lab06 and Lab07 materials</li>
+		</ol>
+	</section>
+	</article>
+	</main>
+	
+	<footer id="footer">
+		<p>Contact: <a href="mailto:102617651@student.swin.edu.au">Rakesh Raj Gopala Sai Krishnan</a></p>
+	</footer>
+	
+</body>
+</html>
+	
+	

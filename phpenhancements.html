@@ -1,0 +1,82 @@
+<!--
+filename:enhancements2.html
+author:Rakesh Raj
+created:25/10/2020
+last modified:-25/10/2020
+description:Enhancements page for PHP
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+	    <meta name="description" content="Enhancements Page" />	
+	    <meta name="keywords" content="HTML5, Instant Messaging" />
+	    <meta name="author" content="Rakesh Raj Gopala Sai Krishnan"  />
+	    <link href="styles/style.css" rel="stylesheet"/>
+	    <title>Instant Messaging</title>
+	</head>
+<body>
+	<header>
+		<h1>INSTANT MESSAGING (IM) TECHNOLOGY</h1>
+	</header>
+	<nav>	
+	    <p><a class="nav" href="index.php">Home</a></p>
+		<p><a href="topic.php">Topic</a></p>
+		<p><a href="quiz.php">Quiz</a></p>
+		<p><a href="manage.php">Manage</a></p>
+		<p><a href="enhancements.html">Enhancements</a></p>
+		<p><a href="enhancements2.html">Javascript Enhancements</a></p>
+		<p><a href="phpenhancements.html">PHP Enhancements</a></p>
+	</nav>
+	<main>
+	<article class="enhancements_main">
+	<h2>Detailed description of enhancements used for PHP</h2>
+	<section class="enhancements">
+		<h2>Enhancement 1: Login for Quiz Supervisors</h2>
+		<p>The code required to implement this feature are,</p>
+		<ul>
+		<li>@mysqli_connect</li>
+		<li>mysqli_query</li>
+		<li>mysqli_affected_rows</li>
+		<li>SQL Query</li>
+		</ul>	
+		<p>This features introduces a creation of new table in database called <b>"manage"</b> which stores the username and password of quiz supervisors. The access to manage the records is possible only by login using the correct supervisor credentials. </p>
+		<p>This feature can be accessed using this <a href="manage.php">link</a>. 
+		<p><b>Credentials required to login for a Supervisor</b></p>
+		<p><b>Username: </b>supervisor</p>
+		<p><b>Password: </b>123456</p>
+	</section>
+	<section class="enhancements">
+		<h2>Enhancement 2: Sort the order to display the quiz attempt records</h2>
+		<p>The code required to implement this feature are,</p>
+		<ul>
+		<li>@mysqli_connect</li>
+		<li>mysqli_fetch_assoc</li>
+		<li>mysqli_affected_rows</li>
+		<li>SQL Query</li>
+		</ul>
+		<p>This feature allows the supervisor to sort and list all records of the attempts table. The supervisor is provided the various options to sort such as Score, Student ID, First Name, Last Name, Date and Time, Number of Attempts and No Sort.</p>
+		<p>This feature is used in the <b>"supervisor.php"</b> page which is accessible only after successful login of "manage.php".</p>
+		<p><b>Use this <a href="manage.php">link</a> and credentials to login as a Supervisor</b></p>
+		<p><b>Username: </b>supervisor</p>
+		<p><b>Password: </b>123456</p>
+		<p>Once logged in, you can experiment the sorting options</p>
+	</section> 
+	<section class="references">
+		<h3>References</h3>
+		<ol>
+		<li>Week 8, 9, 10 Lecture slides</li>
+		<li>Lab08, Lab09 and Lab10 materials</li>
+		</ol>
+	</section>
+	</article>
+	</main>
+	
+	<footer id="footer">
+		<p>Contact: <a href="mailto:102617651@student.swin.edu.au">Rakesh Raj Gopala Sai Krishnan</a></p>
+	</footer>
+	
+</body>
+</html>
+	
+	
